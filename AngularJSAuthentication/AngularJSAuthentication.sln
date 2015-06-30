@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSAuthentication.API", "AngularJSAuthentication\AngularJSAuthentication.API.csproj", "{289C181D-6E91-42BC-9CD0-B5E858C66C46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSAuthentication.Web", "..\..\..\..\Users\mmoran\Documents\AngularJSAuthentication\AngularJSAuthentication.Web\AngularJSAuthentication.Web.csproj", "{E4156422-2684-4222-95C2-4B9AE4CBA7E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSAuthentication.ResourceServer", "AngularJSAuthentication.ResourceServer\AngularJSAuthentication.ResourceServer.csproj", "{31DB7B45-3F7E-4720-B49A-27674682E1B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{289C181D-6E91-42BC-9CD0-B5E858C66C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289C181D-6E91-42BC-9CD0-B5E858C66C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289C181D-6E91-42BC-9CD0-B5E858C66C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289C181D-6E91-42BC-9CD0-B5E858C66C46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4156422-2684-4222-95C2-4B9AE4CBA7E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4156422-2684-4222-95C2-4B9AE4CBA7E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4156422-2684-4222-95C2-4B9AE4CBA7E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4156422-2684-4222-95C2-4B9AE4CBA7E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31DB7B45-3F7E-4720-B49A-27674682E1B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31DB7B45-3F7E-4720-B49A-27674682E1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31DB7B45-3F7E-4720-B49A-27674682E1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31DB7B45-3F7E-4720-B49A-27674682E1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

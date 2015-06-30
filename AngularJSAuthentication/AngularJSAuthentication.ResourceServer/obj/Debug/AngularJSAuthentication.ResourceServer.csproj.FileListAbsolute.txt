@@ -1,0 +1,1 @@
+C:\Source\Bench\AngularJSAuthentication\AngularJSAuthentication\AngularJSAuthentication.ResourceServer\obj\Debug\AngularJSAuthentication.ResourceServer.csprojResolveAssemblyReference.cache
