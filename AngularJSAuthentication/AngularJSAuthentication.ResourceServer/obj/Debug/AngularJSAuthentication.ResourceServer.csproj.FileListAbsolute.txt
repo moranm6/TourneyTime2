@@ -1,1 +1,2 @@
 C:\Source\Bench\AngularJSAuthentication\AngularJSAuthentication\AngularJSAuthentication.ResourceServer\obj\Debug\AngularJSAuthentication.ResourceServer.csprojResolveAssemblyReference.cache
+C:\Source\Bench\TourneyTime2\AngularJSAuthentication\AngularJSAuthentication.ResourceServer\obj\Debug\AngularJSAuthentication.ResourceServer.csprojResolveAssemblyReference.cache
