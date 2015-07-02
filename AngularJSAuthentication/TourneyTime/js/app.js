@@ -34,8 +34,18 @@ var app = angular.module('TourneyTime', ['ionic', 'LocalStorageModule']);
         $stateProvider.state('register', {
             url: '/register',
             views: {
-                help: {
+                register: {
                     templateUrl: 'register.html',
+                    controller: 'HomeController'
+                }
+            }
+        })
+
+        $stateProvider.state('profile', {
+            url: '/profile',
+            views: {
+                profile: {
+                    templateUrl: 'profile.html',
                     controller: 'HomeController'
                 }
             }
@@ -52,11 +62,22 @@ var app = angular.module('TourneyTime', ['ionic', 'LocalStorageModule']);
 
     })
 
-app.controller('HomeController', function($scope, playerService, authService) {
+    app.controller('HomeController', function ($scope, playerService, authService, ordersService) {
 
     //$scope.players = "testing";
 
     //$scope.createNewTournament = tournamentService.createNewTournament;
+
+        $scope.orders = [];
+
+        ordersService.getOrders().then(function (results) {
+
+            $scope.orders = results.data;
+
+        }, function (error) {
+            //alert(error.data.message);
+            $scope.ordersError = error.data.message;
+        });
 
     playerService.getPlayers(function (data) {
         $scope.players = data;

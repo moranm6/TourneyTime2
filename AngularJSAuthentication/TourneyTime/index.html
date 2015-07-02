@@ -44,17 +44,25 @@
             <ion-tab icon="ion-help" ui-sref="help">
                 <ion-nav-view name="help"></ion-nav-view>
             </ion-tab>
+            <ion-tab icon="ion-person" ui-sref="profile">
+                <ion-nav-view name="profile"></ion-nav-view>
+            </ion-tab>
         </ion-tabs>
 
 
 
-        <script type="text/ng-template" id="home.html">
+    <script type="text/ng-template" id="home.html">
             <ion-view title="Home">
                 <ion-content padding="true">
                     <h2>Tourney Time</h2>
                     <p>
                         <a class="button icon icon-right ion-chevron-right" href="#/register">Register</a>
                     </p>
+                    
+                    <p>
+                        <a class="button icon icon-right ion-chevron-right" href="#/profile">Profile</a>
+                    </p>
+
                     <p>Here's the main route for the app.</p>
                 </ion-content>
             </ion-view>
@@ -125,8 +133,20 @@
             </ion-view>
         </script>
 
-    
-        <script src="scripts/angular-local-storage.min.js"></script>
+
+    <script type="text/ng-template" id="profile.html">
+            <ion-view title="Profile">
+                <ion-content padding="true">
+                    <h2>Profile</h2>
+                    <h3 ng-if="ordersError != undefined">{{ordersError}}</h3>
+                    <h3 ng-if="ordersError == undefined">You are logged in!</h3>
+                    {{orders}}
+                </ion-content>
+            </ion-view>
+        </script>
+
+
+    <script src="scripts/angular-local-storage.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script src="bower_components/jquery/dist/jquery-2.1.4.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
