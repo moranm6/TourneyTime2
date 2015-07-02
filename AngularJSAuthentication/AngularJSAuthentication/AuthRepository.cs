@@ -22,17 +22,44 @@ namespace AngularJSAuthentication
             _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
         }
 
-        public async Task<IdentityResult> RegisterUser(UserModel userModel)
+        public async Task<IdentityResult> RegisterUser(ApplicationUser userModel)
         {
-            IdentityUser user = new IdentityUser
+            var user = new ApplicationUser()
             {
-                UserName = userModel.UserName
+                UserName = userModel.UserName,
+                FirstName = userModel.FirstName,
+                LastName = userModel.LastName,
+                Password = userModel.Password,
+                ConfirmPassword = userModel.ConfirmPassword,
+                Email = userModel.Email,
             };
 
+            //Player player = new Player
+            //{
+            //    UserName = userModel.UserName,
+            //    FirstName = userModel.FirstName,
+            //    LastName = userModel.FirstName,
+            //    AspUserId = user.Id
+            //};
+            
             var result = await _userManager.CreateAsync(user, userModel.Password);
 
             return result;
         }
+
+        //public void RegisterPlayer(Player userModel, IdentityResult user)
+        //{
+        //    Player player = new Player
+        //    {
+        //        UserName = userModel.UserName,
+        //        FirstName = userModel.FirstName
+
+        //    };
+
+        //    //var result = await _userManager.CreateAsync(user, userModel.Password);
+
+        //    //return result;
+        //}
 
         public async Task<IdentityUser> FindUser(string userName, string password)
         {

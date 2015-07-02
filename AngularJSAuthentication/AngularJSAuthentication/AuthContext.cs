@@ -10,8 +10,8 @@ namespace AngularJSAuthentication
     public class AuthContext : IdentityDbContext<IdentityUser>
     {
 
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        //public string FirstName { get; set; }
+        //public string LastName { get; set; }
        
 
         public AuthContext()
@@ -24,5 +24,17 @@ namespace AngularJSAuthentication
 
         public System.Data.Entity.DbSet<Game> Games { get; set; }
 
+
+        //protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
+        //{
+        //    base.OnModelCreating(modelBuilder);
+
+
+        //    modelBuilder.Entity<Player>().ToTable("Players", "dbo");
+        //    modelBuilder.Entity<IdentityUser>().ToTable("Players", "dbo");
+
+        //}
+
     }
+
 }

@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace AngularJSAuthentication.Models
 {
-    public class UserModel
+    public class Player //: IdentityUser
     {
         public int Id { get; set; }
 
@@ -28,10 +30,15 @@ namespace AngularJSAuthentication.Models
         [Required]
         [Display(Name = "First name")]
         public string FirstName { get; set; }
+
         [Required]
         [Display(Name = "Last name")]
         public string LastName { get; set; }
-        public List<Game> Games { get; set; }
-        public List<Tournament> Tournaments { get; set; }
+
+        //[ForeignKey("AspUserId")]
+        //public virtual string AspUserId { get; set; }
+
+        //public List<Game> Games { get; set; }
+        //public List<Tournament> Tournaments { get; set; }
     }
 }

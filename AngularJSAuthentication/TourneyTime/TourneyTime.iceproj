@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>8bc1d2e2-87c0-4067-9aff-4857546afcf3</ProjectGuid>
+    <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".abignore" />
+    <Content Include=".abproject" />
+    <Content Include=".debug.abproject" />
+    <Content Include=".release.abproject" />
+    <Content Include="bower_components\angular-animate\.bower.json" />
+    <Content Include="bower_components\angular-animate\angular-animate.js" />
+    <Content Include="bower_components\angular-animate\angular-animate.min.js" />
+    <Content Include="bower_components\angular-animate\angular-animate.min.js.map" />
+    <Content Include="bower_components\angular-animate\bower.json" />
+    <Content Include="bower_components\angular-animate\package.json" />
+    <Content Include="bower_components\angular-animate\README.md" />
+    <Content Include="bower_components\angular-sanitize\.bower.json" />
+    <Content Include="bower_components\angular-sanitize\angular-sanitize.js" />
+    <Content Include="bower_components\angular-sanitize\angular-sanitize.min.js" />
+    <Content Include="bower_components\angular-sanitize\angular-sanitize.min.js.map" />
+    <Content Include="bower_components\angular-sanitize\bower.json" />
+    <Content Include="bower_components\angular-sanitize\package.json" />
+    <Content Include="bower_components\angular-sanitize\README.md" />
+    <Content Include="bower_components\angular-ui-router\.bower.json" />
+    <Content Include="bower_components\angular-ui-router\api\angular-ui-router.d.ts" />
+    <Content Include="bower_components\angular-ui-router\bower.json" />
+    <Content Include="bower_components\angular-ui-router\CHANGELOG.md" />
+    <Content Include="bower_components\angular-ui-router\CONTRIBUTING.md" />
+    <Content Include="bower_components\angular-ui-router\LICENSE" />
+    <Content Include="bower_components\angular-ui-router\README.md" />
+    <Content Include="bower_components\angular-ui-router\release\angular-ui-router.js" />
+    <Content Include="bower_components\angular-ui-router\release\angular-ui-router.min.js" />
+    <Content Include="bower_components\angular-ui-router\src\common.js" />
+    <Content Include="bower_components\angular-ui-router\src\resolve.js" />
+    <Content Include="bower_components\angular-ui-router\src\state.js" />
+    <Content Include="bower_components\angular-ui-router\src\stateDirectives.js" />
+    <Content Include="bower_components\angular-ui-router\src\stateFilters.js" />
+    <Content Include="bower_components\angular-ui-router\src\templateFactory.js" />
+    <Content Include="bower_components\angular-ui-router\src\urlMatcherFactory.js" />
+    <Content Include="bower_components\angular-ui-router\src\urlRouter.js" />
+    <Content Include="bower_components\angular-ui-router\src\view.js" />
+    <Content Include="bower_components\angular-ui-router\src\viewDirective.js" />
+    <Content Include="bower_components\angular-ui-router\src\viewScroll.js" />
+    <Content Include="bower_components\angular\.bower.json" />
+    <Content Include="bower_components\angular\angular-csp.css" />
+    <Content Include="bower_components\angular\angular.js" />
+    <Content Include="bower_components\angular\angular.min.js" />
+    <Content Include="bower_components\angular\angular.min.js.gzip" />
+    <Content Include="bower_components\angular\angular.min.js.map" />
+    <Content Include="bower_components\angular\bower.json" />
+    <Content Include="bower_components\angular\package.json" />
+    <Content Include="bower_components\angular\README.md" />
+    <Content Include="bower_components\ionic\.bower.json" />
+    <Content Include="bower_components\ionic\bower.json" />
+    <Content Include="bower_components\ionic\CHANGELOG.md" />
+    <Content Include="bower_components\ionic\circle.yml" />
+    <Content Include="bower_components\ionic\demos\directive\checkbox\simple\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\checkbox\simple\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\checkbox\simple\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\collectionRepeat\contacts\contacts.html" />
+    <Content Include="bower_components\ionic\demos\directive\collectionRepeat\contacts\contacts.js" />
+    <Content Include="bower_components\ionic\demos\directive\collectionRepeat\contacts\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\footer\simple\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\footer\simple\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\footer\simple\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\header\simple\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\header\simple\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\header\simple\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\infiniteScroll\forever\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\infiniteScroll\forever\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\infiniteScroll\forever\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\list\animated\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\list\animated\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\list\animated\style.css" />
+    <Content Include="bower_components\ionic\demos\directive\list\animated\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\list\reorderDelete\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\list\reorderDelete\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\list\reorderDelete\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\radio\chooseOne\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\radio\chooseOne\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\radio\chooseOne\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\refresher\refreshList\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\refresher\refreshList\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\refresher\refreshList\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\sideMenus\navWithMenu\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\sideMenus\navWithMenu\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\sideMenus\navWithMenu\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\sideMenus\simple\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\sideMenus\simple\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\sideMenus\simple\style.css" />
+    <Content Include="bower_components\ionic\demos\directive\sideMenus\simple\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\slideBox\appIntro\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\slideBox\appIntro\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\slideBox\appIntro\style.css" />
+    <Content Include="bower_components\ionic\demos\directive\slideBox\appIntro\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\tabs\tabsAndNav\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\tabs\tabsAndNav\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\tabs\tabsAndNav\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\textInput\floatingLabel\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\textInput\floatingLabel\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\textInput\floatingLabel\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\directive\toggle\simple\index.html" />
+    <Content Include="bower_components\ionic\demos\directive\toggle\simple\index.js" />
+    <Content Include="bower_components\ionic\demos\directive\toggle\simple\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\old\actionsheet\index.html" />
+    <Content Include="bower_components\ionic\demos\old\actionsheet\script.js" />
+    <Content Include="bower_components\ionic\demos\old\actionsheet\style.css" />
+    <Content Include="bower_components\ionic\demos\old\app-intro-walkthrough\index.html" />
+    <Content Include="bower_components\ionic\demos\old\app-intro-walkthrough\script.js" />
+    <Content Include="bower_components\ionic\demos\old\app-intro-walkthrough\style.css" />
+    <Content Include="bower_components\ionic\demos\old\checkbox\index.html" />
+    <Content Include="bower_components\ionic\demos\old\checkbox\script.js" />
+    <Content Include="bower_components\ionic\demos\old\checkbox\style.css" />
+    <Content Include="bower_components\ionic\demos\old\collection-repeat\contacts.js" />
+    <Content Include="bower_components\ionic\demos\old\collection-repeat\contacts.json" />
+    <Content Include="bower_components\ionic\demos\old\collection-repeat\index.html" />
+    <Content Include="bower_components\ionic\demos\old\collection-repeat\script.js" />
+    <Content Include="bower_components\ionic\demos\old\collection-repeat\style.css" />
+    <Content Include="bower_components\ionic\demos\old\flickr-search-example\index.html" />
+    <Content Include="bower_components\ionic\demos\old\flickr-search-example\script.js" />
+    <Content Include="bower_components\ionic\demos\old\flickr-search-example\style.css" />
+    <Content Include="bower_components\ionic\demos\old\frosted-glass-effect\index.html" />
+    <Content Include="bower_components\ionic\demos\old\frosted-glass-effect\script.js" />
+    <Content Include="bower_components\ionic\demos\old\frosted-glass-effect\style.css" />
+    <Content Include="bower_components\ionic\demos\old\google-maps\index.html" />
+    <Content Include="bower_components\ionic\demos\old\google-maps\script.js" />
+    <Content Include="bower_components\ionic\demos\old\google-maps\style.css" />
+    <Content Include="bower_components\ionic\demos\old\lists\index.html" />
+    <Content Include="bower_components\ionic\demos\old\lists\script.js" />
+    <Content Include="bower_components\ionic\demos\old\lists\style.css" />
+    <Content Include="bower_components\ionic\demos\old\loading-bar\index.html" />
+    <Content Include="bower_components\ionic\demos\old\loading-bar\script.js" />
+    <Content Include="bower_components\ionic\demos\old\loading-bar\style.css" />
+    <Content Include="bower_components\ionic\demos\old\modal\index.html" />
+    <Content Include="bower_components\ionic\demos\old\modal\script.js" />
+    <Content Include="bower_components\ionic\demos\old\modal\style.css" />
+    <Content Include="bower_components\ionic\demos\old\popup\index.html" />
+    <Content Include="bower_components\ionic\demos\old\popup\script.js" />
+    <Content Include="bower_components\ionic\demos\old\popup\style.css" />
+    <Content Include="bower_components\ionic\demos\old\pull-to-refresh\index.html" />
+    <Content Include="bower_components\ionic\demos\old\pull-to-refresh\script.js" />
+    <Content Include="bower_components\ionic\demos\old\pull-to-refresh\style.css" />
+    <Content Include="bower_components\ionic\demos\old\radio-buttons\index.html" />
+    <Content Include="bower_components\ionic\demos\old\radio-buttons\script.js" />
+    <Content Include="bower_components\ionic\demos\old\radio-buttons\style.css" />
+    <Content Include="bower_components\ionic\demos\old\shrinking-header\index.html" />
+    <Content Include="bower_components\ionic\demos\old\shrinking-header\script.js" />
+    <Content Include="bower_components\ionic\demos\old\shrinking-header\style.css" />
+    <Content Include="bower_components\ionic\demos\old\side-menu-and-navigation\index.html" />
+    <Content Include="bower_components\ionic\demos\old\side-menu-and-navigation\script.js" />
+    <Content Include="bower_components\ionic\demos\old\side-menu-and-navigation\style.css" />
+    <Content Include="bower_components\ionic\demos\old\sign-in-then-tabs\index.html" />
+    <Content Include="bower_components\ionic\demos\old\sign-in-then-tabs\script.js" />
+    <Content Include="bower_components\ionic\demos\old\sign-in-then-tabs\style.css" />
+    <Content Include="bower_components\ionic\demos\old\starter-template\index.html" />
+    <Content Include="bower_components\ionic\demos\old\starter-template\script.js" />
+    <Content Include="bower_components\ionic\demos\old\starter-template\style.css" />
+    <Content Include="bower_components\ionic\demos\old\swipeable-cards\index.html" />
+    <Content Include="bower_components\ionic\demos\old\swipeable-cards\script.js" />
+    <Content Include="bower_components\ionic\demos\old\swipeable-cards\style.css" />
+    <Content Include="bower_components\ionic\demos\old\tabs-and-navigation\index.html" />
+    <Content Include="bower_components\ionic\demos\old\tabs-and-navigation\script.js" />
+    <Content Include="bower_components\ionic\demos\old\tabs-and-navigation\style.css" />
+    <Content Include="bower_components\ionic\demos\old\thumbnail-list\index.html" />
+    <Content Include="bower_components\ionic\demos\old\thumbnail-list\script.js" />
+    <Content Include="bower_components\ionic\demos\old\thumbnail-list\style.css" />
+    <Content Include="bower_components\ionic\demos\old\toggle\index.html" />
+    <Content Include="bower_components\ionic\demos\old\toggle\script.js" />
+    <Content Include="bower_components\ionic\demos\old\toggle\style.css" />
+    <Content Include="bower_components\ionic\demos\service\actionSheet\index.html" />
+    <Content Include="bower_components\ionic\demos\service\actionSheet\index.js" />
+    <Content Include="bower_components\ionic\demos\service\actionSheet\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\service\loading\index.html" />
+    <Content Include="bower_components\ionic\demos\service\loading\index.js" />
+    <Content Include="bower_components\ionic\demos\service\loading\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\service\popover\index.html" />
+    <Content Include="bower_components\ionic\demos\service\popover\index.js" />
+    <Content Include="bower_components\ionic\demos\service\popover\test.scenario.js" />
+    <Content Include="bower_components\ionic\demos\service\popup\popping\index.html" />
+    <Content Include="bower_components\ionic\demos\service\popup\popping\index.js" />
+    <Content Include="bower_components\ionic\demos\service\popup\popping\test.scenario.js" />
+    <Content Include="bower_components\ionic\gulpfile.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\headerBarController.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\infiniteScrollController.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\listController.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\navBarController.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\navViewController.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\refresherController.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\scrollController.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\sideMenuController.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\spinnerController.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\tabController.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\tabsController.js" />
+    <Content Include="bower_components\ionic\js\angular\controller\viewController.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\actionSheet.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\checkbox.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\collectionRepeat.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\content.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\exposeAsideWhen.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\gesture.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\headerFooterBar.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\infiniteScroll.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\item.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\itemDeleteButton.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\itemFloatingLabel.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\itemOptionButton.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\itemReorderButton.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\keyboardAttach.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\list.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\menuClose.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\menuToggle.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\modal.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\modalView.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\navBackButton.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\navBar.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\navButtons.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\navDirection.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\navTitle.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\navTransition.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\navView.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\ngClick.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\pane.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\popover.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\popoverView.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\radio.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\refresher.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\scroll.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\sideMenu.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\sideMenuContent.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\sideMenus.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\slideBox.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\spinner.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\tab.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\tabNav.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\tabs.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\toggle.js" />
+    <Content Include="bower_components\ionic\js\angular\directive\view.js" />
+    <Content Include="bower_components\ionic\js\angular\main.js" />
+    <Content Include="bower_components\ionic\js\angular\service\actionSheet.js" />
+    <Content Include="bower_components\ionic\js\angular\service\angularOverrides.js" />
+    <Content Include="bower_components\ionic\js\angular\service\backdrop.js" />
+    <Content Include="bower_components\ionic\js\angular\service\bind.js" />
+    <Content Include="bower_components\ionic\js\angular\service\body.js" />
+    <Content Include="bower_components\ionic\js\angular\service\clickBlock.js" />
+    <Content Include="bower_components\ionic\js\angular\service\decorators\compile.js" />
+    <Content Include="bower_components\ionic\js\angular\service\decorators\location.js" />
+    <Content Include="bower_components\ionic\js\angular\service\gesture.js" />
+    <Content Include="bower_components\ionic\js\angular\service\history.js" />
+    <Content Include="bower_components\ionic\js\angular\service\ionicConfig.js" />
+    <Content Include="bower_components\ionic\js\angular\service\loading.js" />
+    <Content Include="bower_components\ionic\js\angular\service\modal.js" />
+    <Content Include="bower_components\ionic\js\angular\service\navBarDelegate.js" />
+    <Content Include="bower_components\ionic\js\angular\service\navViewDelegate.js" />
+    <Content Include="bower_components\ionic\js\angular\service\platform.js" />
+    <Content Include="bower_components\ionic\js\angular\service\popover.js" />
+    <Content Include="bower_components\ionic\js\angular\service\popup.js" />
+    <Content Include="bower_components\ionic\js\angular\service\position.js" />
+    <Content Include="bower_components\ionic\js\angular\service\scrollDelegate.js" />
+    <Content Include="bower_components\ionic\js\angular\service\sideMenuDelegate.js" />
+    <Content Include="bower_components\ionic\js\angular\service\slideBoxDelegate.js" />
+    <Content Include="bower_components\ionic\js\angular\service\tabsDelegate.js" />
+    <Content Include="bower_components\ionic\js\angular\service\templateCache.js" />
+    <Content Include="bower_components\ionic\js\angular\service\templateLoader.js" />
+    <Content Include="bower_components\ionic\js\angular\service\viewService.js" />
+    <Content Include="bower_components\ionic\js\angular\service\viewSwitcher.js" />
+    <Content Include="bower_components\ionic\lib\css\ionic.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\lib\css\ionic.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\lib\fonts\ionicons.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\lib\fonts\ionicons.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\lib\fonts\ionicons.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\lib\fonts\ionicons.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\lib\js\ionic-angular.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\lib\js\ionic-angular.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\lib\js\ionic.bundle.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\lib\js\ionic.bundle.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\lib\js\ionic.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\lib\js\ionic.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="bower_components\ionic\LICENSE" />
+    <Content Include="bower_components\ionic\README.md" />
+    <Content Include="bower_components\ionic\release\css\ionic.css" />
+    <Content Include="bower_components\ionic\release\css\ionic.min.css" />
+    <Content Include="bower_components\ionic\release\fonts\ionicons.eot" />
+    <Content Include="bower_components\ionic\release\fonts\ionicons.svg" />
+    <Content Include="bower_components\ionic\release\fonts\ionicons.ttf" />
+    <Content Include="bower_components\ionic\release\fonts\ionicons.woff" />
+    <Content Include="bower_components\ionic\release\js\ionic-angular.js" />
+    <Content Include="bower_components\ionic\release\js\ionic-angular.min.js" />
+    <Content Include="bower_components\ionic\release\js\ionic.bundle.js" />
+    <Content Include="bower_components\ionic\release\js\ionic.bundle.min.js" />
+    <Content Include="bower_components\ionic\release\js\ionic.js" />
+    <Content Include="bower_components\ionic\release\js\ionic.min.js" />
+    <Content Include="bower_components\ionic\release\version.json" />
+    <Content Include="bower_components\ionic\scss\ionic.scss" />
+    <Content Include="bower_components\ionic\scss\ionicons\ionicons.scss" />
+    <Content Include="bower_components\ionic\scss\ionicons\_ionicons-font.scss" />
+    <Content Include="bower_components\ionic\scss\ionicons\_ionicons-icons.scss" />
+    <Content Include="bower_components\ionic\scss\ionicons\_ionicons-variables.scss" />
+    <Content Include="bower_components\ionic\scss\_action-sheet.scss" />
+    <Content Include="bower_components\ionic\scss\_animations.scss" />
+    <Content Include="bower_components\ionic\scss\_backdrop.scss" />
+    <Content Include="bower_components\ionic\scss\_badge.scss" />
+    <Content Include="bower_components\ionic\scss\_bar.scss" />
+    <Content Include="bower_components\ionic\scss\_button-bar.scss" />
+    <Content Include="bower_components\ionic\scss\_button.scss" />
+    <Content Include="bower_components\ionic\scss\_checkbox.scss" />
+    <Content Include="bower_components\ionic\scss\_form.scss" />
+    <Content Include="bower_components\ionic\scss\_grid.scss" />
+    <Content Include="bower_components\ionic\scss\_items.scss" />
+    <Content Include="bower_components\ionic\scss\_list.scss" />
+    <Content Include="bower_components\ionic\scss\_loading.scss" />
+    <Content Include="bower_components\ionic\scss\_menu.scss" />
+    <Content Include="bower_components\ionic\scss\_mixins.scss" />
+    <Content Include="bower_components\ionic\scss\_modal.scss" />
+    <Content Include="bower_components\ionic\scss\_platform.scss" />
+    <Content Include="bower_components\ionic\scss\_popover.scss" />
+    <Content Include="bower_components\ionic\scss\_popup.scss" />
+    <Content Include="bower_components\ionic\scss\_progress.scss" />
+    <Content Include="bower_components\ionic\scss\_radio.scss" />
+    <Content Include="bower_components\ionic\scss\_range.scss" />
+    <Content Include="bower_components\ionic\scss\_refresher.scss" />
+    <Content Include="bower_components\ionic\scss\_reset.scss" />
+    <Content Include="bower_components\ionic\scss\_scaffolding.scss" />
+    <Content Include="bower_components\ionic\scss\_select.scss" />
+    <Content Include="bower_components\ionic\scss\_slide-box.scss" />
+    <Content Include="bower_components\ionic\scss\_spinner.scss" />
+    <Content Include="bower_components\ionic\scss\_tabs.scss" />
+    <Content Include="bower_components\ionic\scss\_toggle.scss" />
+    <Content Include="bower_components\ionic\scss\_transitions.scss" />
+    <Content Include="bower_components\ionic\scss\_type.scss" />
+    <Content Include="bower_components\ionic\scss\_util.scss" />
+    <Content Include="bower_components\ionic\scss\_variables.scss" />
+    <Content Include="bower_components\jquery\dist\jquery-2.1.4.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="cordova.android.js" />
+    <Content Include="cordova.ios.js" />
+    <Content Include="cordova.wp8.js" />
+    <Content Include="css\app.css" />
+    <Content Include="index.html" />
+    <Content Include="scripts\angular-local-storage.min.js" />
+    <Content Include="scripts\authComplete.js" />
+    <Content Include="scripts\loading-bar.min.js" />
+    <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-nodpi\splashscreen.9.png" />
+    <Resource Include="App_Resources\iOS\Default-568h@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-667h.png" />
+    <Resource Include="App_Resources\iOS\Default-736h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-667h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-736h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait@2x.png" />
+    <Resource Include="App_Resources\iOS\Default.png" />
+    <Resource Include="App_Resources\iOS\Default@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-40.png" />
+    <Resource Include="App_Resources\iOS\icon-40@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-40@3x.png" />
+    <Resource Include="App_Resources\iOS\icon-60.png" />
+    <Resource Include="App_Resources\iOS\icon-60@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-60@3x.png" />
+    <Resource Include="App_Resources\iOS\icon-72.png" />
+    <Resource Include="App_Resources\iOS\icon-72@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-76.png" />
+    <Resource Include="App_Resources\iOS\icon-76@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small@2x.png" />
+    <Resource Include="App_Resources\iOS\icon.png" />
+    <Resource Include="App_Resources\iOS\icon@2x.png" />
+    <Resource Include="App_Resources\WP8\ApplicationIcon.png" />
+    <Resource Include="App_Resources\WP8\SplashScreenImage.jpg" />
+    <Resource Include="App_Resources\WP8\Assets\BadgeLogo.png" />
+    <Resource Include="App_Resources\WP8\Assets\Logo.png" />
+    <Resource Include="App_Resources\WP8\Assets\SplashScreen.png" />
+    <Resource Include="App_Resources\WP8\Assets\SquareTile150x150.png" />
+    <Resource Include="App_Resources\WP8\Assets\SquareTile71x71.png" />
+    <Resource Include="App_Resources\WP8\Assets\StoreLogo.png" />
+    <Resource Include="App_Resources\WP8\Assets\WideLogo.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
+    <Content Include="css\index.css" />
+    <Content Include="img\cordova.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="js\angular.js" />
+    <Content Include="js\app.js" />
+    <Content Include="js\index.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Resources\" />
+    <Folder Include="App_Resources\Android\" />
+    <Folder Include="App_Resources\Android\drawable-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-nodpi\" />
+    <Folder Include="App_Resources\iOS\" />
+    <Folder Include="App_Resources\WP8\" />
+    <Folder Include="App_Resources\WP8\Assets\" />
+    <Folder Include="App_Resources\WP8\Tiles\" />
+    <Folder Include="App_Resources\WP8\Tiles\Iconic\" />
+    <Folder Include="bower_components\" />
+    <Folder Include="bower_components\angular-animate\" />
+    <Folder Include="bower_components\angular-sanitize\" />
+    <Folder Include="bower_components\angular-ui-router\" />
+    <Folder Include="bower_components\angular-ui-router\api\" />
+    <Folder Include="bower_components\angular-ui-router\release\" />
+    <Folder Include="bower_components\angular-ui-router\src\" />
+    <Folder Include="bower_components\angular\" />
+    <Folder Include="bower_components\ionic\" />
+    <Folder Include="bower_components\ionic\demos\" />
+    <Folder Include="bower_components\ionic\demos\directive\" />
+    <Folder Include="bower_components\ionic\demos\directive\checkbox\" />
+    <Folder Include="bower_components\ionic\demos\directive\checkbox\simple\" />
+    <Folder Include="bower_components\ionic\demos\directive\collectionRepeat\" />
+    <Folder Include="bower_components\ionic\demos\directive\collectionRepeat\contacts\" />
+    <Folder Include="bower_components\ionic\demos\directive\footer\" />
+    <Folder Include="bower_components\ionic\demos\directive\footer\simple\" />
+    <Folder Include="bower_components\ionic\demos\directive\header\" />
+    <Folder Include="bower_components\ionic\demos\directive\header\simple\" />
+    <Folder Include="bower_components\ionic\demos\directive\infiniteScroll\" />
+    <Folder Include="bower_components\ionic\demos\directive\infiniteScroll\forever\" />
+    <Folder Include="bower_components\ionic\demos\directive\list\" />
+    <Folder Include="bower_components\ionic\demos\directive\list\animated\" />
+    <Folder Include="bower_components\ionic\demos\directive\list\reorderDelete\" />
+    <Folder Include="bower_components\ionic\demos\directive\radio\" />
+    <Folder Include="bower_components\ionic\demos\directive\radio\chooseOne\" />
+    <Folder Include="bower_components\ionic\demos\directive\refresher\" />
+    <Folder Include="bower_components\ionic\demos\directive\refresher\refreshList\" />
+    <Folder Include="bower_components\ionic\demos\directive\sideMenus\" />
+    <Folder Include="bower_components\ionic\demos\directive\sideMenus\navWithMenu\" />
+    <Folder Include="bower_components\ionic\demos\directive\sideMenus\simple\" />
+    <Folder Include="bower_components\ionic\demos\directive\slideBox\" />
+    <Folder Include="bower_components\ionic\demos\directive\slideBox\appIntro\" />
+    <Folder Include="bower_components\ionic\demos\directive\tabs\" />
+    <Folder Include="bower_components\ionic\demos\directive\tabs\tabsAndNav\" />
+    <Folder Include="bower_components\ionic\demos\directive\textInput\" />
+    <Folder Include="bower_components\ionic\demos\directive\textInput\floatingLabel\" />
+    <Folder Include="bower_components\ionic\demos\directive\toggle\" />
+    <Folder Include="bower_components\ionic\demos\directive\toggle\simple\" />
+    <Folder Include="bower_components\ionic\demos\old\" />
+    <Folder Include="bower_components\ionic\demos\old\actionsheet\" />
+    <Folder Include="bower_components\ionic\demos\old\app-intro-walkthrough\" />
+    <Folder Include="bower_components\ionic\demos\old\checkbox\" />
+    <Folder Include="bower_components\ionic\demos\old\collection-repeat\" />
+    <Folder Include="bower_components\ionic\demos\old\flickr-search-example\" />
+    <Folder Include="bower_components\ionic\demos\old\frosted-glass-effect\" />
+    <Folder Include="bower_components\ionic\demos\old\google-maps\" />
+    <Folder Include="bower_components\ionic\demos\old\lists\" />
+    <Folder Include="bower_components\ionic\demos\old\loading-bar\" />
+    <Folder Include="bower_components\ionic\demos\old\modal\" />
+    <Folder Include="bower_components\ionic\demos\old\popup\" />
+    <Folder Include="bower_components\ionic\demos\old\pull-to-refresh\" />
+    <Folder Include="bower_components\ionic\demos\old\radio-buttons\" />
+    <Folder Include="bower_components\ionic\demos\old\shrinking-header\" />
+    <Folder Include="bower_components\ionic\demos\old\side-menu-and-navigation\" />
+    <Folder Include="bower_components\ionic\demos\old\sign-in-then-tabs\" />
+    <Folder Include="bower_components\ionic\demos\old\starter-template\" />
+    <Folder Include="bower_components\ionic\demos\old\swipeable-cards\" />
+    <Folder Include="bower_components\ionic\demos\old\tabs-and-navigation\" />
+    <Folder Include="bower_components\ionic\demos\old\thumbnail-list\" />
+    <Folder Include="bower_components\ionic\demos\old\toggle\" />
+    <Folder Include="bower_components\ionic\demos\service\" />
+    <Folder Include="bower_components\ionic\demos\service\actionSheet\" />
+    <Folder Include="bower_components\ionic\demos\service\loading\" />
+    <Folder Include="bower_components\ionic\demos\service\popover\" />
+    <Folder Include="bower_components\ionic\demos\service\popup\" />
+    <Folder Include="bower_components\ionic\demos\service\popup\popping\" />
+    <Folder Include="bower_components\ionic\js\" />
+    <Folder Include="bower_components\ionic\js\angular\" />
+    <Folder Include="bower_components\ionic\js\angular\controller\" />
+    <Folder Include="bower_components\ionic\js\angular\directive\" />
+    <Folder Include="bower_components\ionic\js\angular\service\" />
+    <Folder Include="bower_components\ionic\js\angular\service\decorators\" />
+    <Folder Include="bower_components\ionic\lib\" />
+    <Folder Include="bower_components\ionic\lib\css\" />
+    <Folder Include="bower_components\ionic\lib\fonts\" />
+    <Folder Include="bower_components\ionic\lib\js\" />
+    <Folder Include="bower_components\ionic\release\" />
+    <Folder Include="bower_components\ionic\release\css\" />
+    <Folder Include="bower_components\ionic\release\fonts\" />
+    <Folder Include="bower_components\ionic\release\js\" />
+    <Folder Include="bower_components\ionic\scss\" />
+    <Folder Include="bower_components\ionic\scss\ionicons\" />
+    <Folder Include="bower_components\jquery\" />
+    <Folder Include="bower_components\jquery\dist\" />
+    <Folder Include="bower_components\jquery\src\" />
+    <Folder Include="bower_components\jquery\src\ajax\" />
+    <Folder Include="bower_components\jquery\src\ajax\var\" />
+    <Folder Include="bower_components\jquery\src\attributes\" />
+    <Folder Include="bower_components\jquery\src\core\" />
+    <Folder Include="bower_components\jquery\src\core\var\" />
+    <Folder Include="bower_components\jquery\src\css\" />
+    <Folder Include="bower_components\jquery\src\css\var\" />
+    <Folder Include="bower_components\jquery\src\data\" />
+    <Folder Include="bower_components\jquery\src\data\var\" />
+    <Folder Include="bower_components\jquery\src\effects\" />
+    <Folder Include="bower_components\jquery\src\event\" />
+    <Folder Include="bower_components\jquery\src\exports\" />
+    <Folder Include="bower_components\jquery\src\manipulation\" />
+    <Folder Include="bower_components\jquery\src\manipulation\var\" />
+    <Folder Include="bower_components\jquery\src\queue\" />
+    <Folder Include="bower_components\jquery\src\sizzle\" />
+    <Folder Include="bower_components\jquery\src\sizzle\dist\" />
+    <Folder Include="bower_components\jquery\src\traversing\" />
+    <Folder Include="bower_components\jquery\src\traversing\var\" />
+    <Folder Include="bower_components\jquery\src\var\" />
+    <Folder Include="css\" />
+    <Folder Include="img\" />
+    <Folder Include="js\" />
+    <Folder Include="scripts\" />
+    <Folder Include="Plugins\" />
+  </ItemGroup>
+  <Import Project="$(IceniumTargets)Build.targets" />
+  <!--
+    TODO: Uncomment this code if you need to customize the build process.
+    <Target Name="BeforeBuild">
+        <Message Text="TODO: Implement BeforeBuild" Importance="high" />
+    </Target>
+
+    <Target Name="AfterBuild">
+        <Message Text="TODO: Implement AfterBuild" Importance="high" />
+    </Target>
+    -->
+</Project>

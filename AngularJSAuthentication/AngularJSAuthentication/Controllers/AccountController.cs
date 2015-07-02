@@ -23,7 +23,7 @@ namespace AngularJSAuthentication.Controllers
         // POST api/Account/Register
         [AllowAnonymous]
         [Route("Register")]
-        public async Task<IHttpActionResult> Register(UserModel userModel)
+        public async Task<IHttpActionResult> Register(ApplicationUser userModel)
         {
             if (!ModelState.IsValid)
             {
@@ -31,7 +31,7 @@ namespace AngularJSAuthentication.Controllers
             }
 
             IdentityResult result = await _repo.RegisterUser(userModel);
-
+            
             IHttpActionResult errorResult = GetErrorResult(result);
 
             if (errorResult != null)

@@ -9,7 +9,7 @@ namespace AngularJSAuthentication.Models
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public List<UserModel> Players { get; set; }
+        public List<ApplicationUser> ApplicationUsers { get; set; }
         public List<Tournament> Tournaments { get; set; }
     }
 }

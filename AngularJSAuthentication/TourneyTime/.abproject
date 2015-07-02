@@ -1,0 +1,45 @@
+{
+  "ProjectName": "TourneyTime",
+  "ProjectGuid": "8bc1d2e2-87c0-4067-9aff-4857546afcf3",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.TourneyTime",
+  "DisplayName": "TourneyTime",
+  "Author": "",
+  "Description": "TourneyTime",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{472ae0e7-6fc4-42d1-a3ec-3a39a9378f5d}",
+  "WP8ProductID": "{2bab4093-a31e-4607-a1f8-00e0203ec9c0}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.TourneyTime",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}

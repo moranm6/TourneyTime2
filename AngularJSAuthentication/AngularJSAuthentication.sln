@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSAuthentication.Web
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSAuthentication.ResourceServer", "AngularJSAuthentication.ResourceServer\AngularJSAuthentication.ResourceServer.csproj", "{31DB7B45-3F7E-4720-B49A-27674682E1B6}"
 EndProject
-Project("{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}") = "TourneyTime", "..\..\IonicAppBuilder\TourneyTime\TourneyTime\TourneyTime\TourneyTime.iceproj", "{8BC1D2E2-87C0-4067-9AFF-4857546AFCF3}"
+Project("{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}") = "TourneyTime", "TourneyTime\TourneyTime.iceproj", "{8BC1D2E2-87C0-4067-9AFF-4857546AFCF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
