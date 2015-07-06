@@ -46,7 +46,7 @@ var app = angular.module('TourneyTime', ['ionic', 'LocalStorageModule']);
             views: {
                 profile: {
                     templateUrl: 'profile.html',
-                    controller: 'HomeController'
+                    controller: 'OrdersController'
                 }
             }
         })
@@ -64,13 +64,9 @@ var app = angular.module('TourneyTime', ['ionic', 'LocalStorageModule']);
 
     app.controller('HomeController', function ($scope, playerService, authService, ordersService) {
 
-    //$scope.players = "testing";
-
-    //$scope.createNewTournament = tournamentService.createNewTournament;
-
         $scope.orders = [];
 
-        ordersService.getOrders().then(function (results) {
+        ordersService.getOrders(authService.authentication.userName).then(function (results) {
 
             $scope.orders = results.data;
 
@@ -83,25 +79,6 @@ var app = angular.module('TourneyTime', ['ionic', 'LocalStorageModule']);
         $scope.players = data;
     });
 
-    var data = {
-        FirstName: 'Michael',
-        LastName: 'Baxter'
-    }
-
-    $scope.addPlayer = playerService.addPlayer;
-
-    $scope.add = function() {
-        $scope.addPlayer(data);
-    }
-
-    //var user = {
-    //    Email: $scope.em,
-    //    Username: 'jbrunner92',
-    //    Password: 'Pass1234!',
-    //    ConfirmPassword: 'Pass1234!',
-    //    FirstName: 'Joey',
-    //    LastName: 'Brunner'
-    //}
 
     $scope.registerUser = playerService.registerUser;
 
@@ -133,22 +110,6 @@ var app = angular.module('TourneyTime', ['ionic', 'LocalStorageModule']);
             $scope.message = "Failed to register user due to:" + errors.join(' ');
         });
 
-
-
-
-    }
-
-    var userForLogin = {
-        Username: "ccampos",
-        Password: "Corey123!",
-        rememberMe: true,
-        Email: "corey@campos.com"
-    }
-
-    $scope.loginString = "username=" + userForLogin.Username + "&amp;password=" + userForLogin.Password + "&amp;grant_type=password";
-
-    $scope.login = function() {
-        playerService.loginUser(userForLogin);
     }
 
     $scope.logout = function() {
@@ -157,6 +118,29 @@ var app = angular.module('TourneyTime', ['ionic', 'LocalStorageModule']);
     }
 
 });
+
+
+
+    app.controller('OrdersController', function ($scope, playerService, authService, ordersService) {
+
+        $scope.orders = [];
+
+        ordersService.getOrders().then(function (results) {
+
+            $scope.orders = results.data;
+
+        }, function (error) {
+            //alert(error.data.message);
+            $scope.ordersError = error.data.message;
+        });
+
+       $scope.logout = function () {
+            authService.logOut();
+            $scope.message = "Logged out successfully";
+        }
+
+    });
+
 
 
 'use strict';
@@ -497,9 +481,16 @@ app.factory('ordersService', ['$http', 'ngAuthSettings', function ($http, ngAuth
 
     var ordersServiceFactory = {};
 
-    var _getOrders = function () {
+    //var _getOrders = function () {
 
-        return $http.get(serviceBase + 'api/orders').then(function (results) {
+    //    return $http.get(serviceBase + 'api/orders').then(function (results) {
+    //        return results;
+    //    });
+    //};
+
+    var _getOrders = function (username) {
+
+        return $http.get(serviceBase + 'api/orders/' + username).then(function (results) {
             return results;
         });
     };

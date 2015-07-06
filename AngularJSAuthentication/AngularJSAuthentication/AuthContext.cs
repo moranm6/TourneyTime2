@@ -20,6 +20,8 @@ namespace AngularJSAuthentication
 
         }
 
+        public System.Data.Entity.DbSet<ApplicationUser> Players { get; set; }
+
         public System.Data.Entity.DbSet<Tournament> Tournaments { get; set; }
 
         public System.Data.Entity.DbSet<Game> Games { get; set; }
