@@ -151,8 +151,12 @@ var app = angular.module('TourneyTime', ['ionic', 'LocalStorageModule']);
         playerService.loginUser(userForLogin);
     }
 
-});
+    $scope.logout = function() {
+        authService.logOut();
+        $scope.message = "Logged out successfully";
+    }
 
+});
 
 
 'use strict';
@@ -223,8 +227,6 @@ app.controller('loginController', ['$scope', '$location', 'authService', 'ngAuth
         });
     }
 }]);
-
-
 
 
 
@@ -368,6 +370,16 @@ app.factory('authService', ['$http', '$q', 'localStorageService', 'ngAuthSetting
     };
 
     var _logOut = function () {
+
+        localStorageService.remove('authorizationData');
+
+        _authentication.isAuth = false;
+        _authentication.userName = "";
+        _authentication.useRefreshTokens = false;
+
+    };
+
+    this.logOut = function () {
 
         localStorageService.remove('authorizationData');
 
