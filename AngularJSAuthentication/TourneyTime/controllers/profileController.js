@@ -1,5 +1,7 @@
 //'use strict';
-angular.module('TourneyTime').controller('profileController', ['$scope', '$location', 'authService', 'ngAuthSettings', function ($scope, playerService, authService, ordersService) {
+angular
+.module('TourneyTime').controller('profileController', ['$scope', '$location', 'playerService', 'authService', 'ngAuthSettings', 'ordersService',
+    function ($scope, $location, playerService, authService, ngAuthSettings, ordersService) {
 
     $scope.orders = [];
 

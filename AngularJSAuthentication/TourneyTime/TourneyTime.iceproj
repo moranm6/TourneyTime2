@@ -374,26 +374,23 @@
     <Content Include="bower_components\jquery\dist\jquery-2.1.4.js">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="controllers\homeController.js" />
-    <Content Include="controllers\loginController.js" />
-    <Content Include="controllers\profileController.js" />
     <Content Include="cordova.android.js" />
     <Content Include="cordova.ios.js" />
     <Content Include="cordova.wp8.js" />
     <Content Include="css\app.css" />
     <Content Include="index.html" />
-    <Content Include="js\authInterceptorService.js" />
-    <Content Include="js\authService.js" />
-    <Content Include="js\homeController.js" />
-    <Content Include="js\loginController.js" />
-    <Content Include="js\ordersService.js" />
-    <Content Include="js\playerService.js" />
-    <Content Include="js\profileController.js" />
-    <Content Include="js\refreshController.js" />
-    <Content Include="js\TokensManagerService.js" />
+    <Content Include="controllers\homeController.js" />
+    <Content Include="controllers\loginController.js" />
+    <Content Include="controllers\profileController.js" />
+    <Content Include="controllers\refreshController.js" />
     <Content Include="scripts\angular-local-storage.min.js" />
     <Content Include="scripts\authComplete.js" />
     <Content Include="scripts\loading-bar.min.js" />
+    <Content Include="services\authInterceptorService.js" />
+    <Content Include="services\authService.js" />
+    <Content Include="services\ordersService.js" />
+    <Content Include="services\playerService.js" />
+    <Content Include="services\TokensManagerService.js" />
     <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
@@ -565,6 +562,7 @@
     <Folder Include="img\" />
     <Folder Include="js\" />
     <Folder Include="controllers\" />
+    <Folder Include="services\" />
     <Folder Include="scripts\" />
     <Folder Include="Plugins\" />
   </ItemGroup>

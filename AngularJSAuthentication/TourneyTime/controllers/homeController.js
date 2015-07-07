@@ -1,6 +1,5 @@
 //'use strict';
-angular.module('TourneyTime')
-.controller('HomeController', function ($scope, playerService, authService, ordersService) {
+angular.module('TourneyTime').controller('HomeController', function ($scope, playerService, authService, ordersService) {
 
     playerService.getPlayers(function (data) {
         $scope.players = data;

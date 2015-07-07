@@ -1,5 +1,6 @@
 //'use strict';
-angular.module('TourneyTime').controller('loginController', ['$scope', '$location', 'authService', 'ngAuthSettings', function ($scope, $location, authService, ngAuthSettings) {
+angular
+.module('TourneyTime').controller('loginController', ['$scope', '$location', 'authService', 'ngAuthSettings', function ($scope, $location, authService, ngAuthSettings) {
 
     $scope.loginData = {
         userName: "",
