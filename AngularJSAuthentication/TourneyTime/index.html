@@ -140,7 +140,8 @@
                     <h2>Profile</h2>
                     <h3 ng-if="ordersError != undefined">{{ordersError}}</h3>
                     <h3 ng-if="ordersError == undefined">You are logged in!</h3>
-                    {{orders}}
+                    Welcome {{loggedInUser.firstName}} {{loggedInUser.lastName}} !
+                    
                 <button class="btn btn-md btn-info btn-block" type="submit" data-ng-click="logout()">Logout</button>
                 <div data-ng-hide="message == ''" class="alert alert-danger">
                     {{message}}
@@ -161,6 +162,22 @@
         <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>--> 
         <script src="scripts/angular-local-storage.min.js"></script>
-        <!--<script src="scripts/loading-bar.min.js"></script>-->
+    <!--<script src="scripts/loading-bar.min.js"></script>-->
+
+        <!-- Load services -->
+        <script src="js/authInterceptorService.js?v=2"></script>
+        <script src="js/authService.js?v=2"></script>
+        <script src="js/ordersService.js?v=2"></script>
+        <script src="js/playerService.js?v=2"></script>
+        <script src="js/tokensManagerService.js?v=2"></script>
+        <!-- Load controllers -->
+        <script src="js/profileController.js?v=2"></script>
+        <script src="js/homeController.js?v=2"></script>
+        <script src="js/loginController.js?v=2"></script>
+        <script src="js/refreshController.js?v=2"></script>
+        <script src="js/tokensManagerController.js?v=2"></script>
+        <script src="js/associateController.js?v=2"></script>
+        <!-- Load custom filters -->
+        <!-- Load custom directives -->
     </body>
 </html>

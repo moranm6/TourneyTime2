@@ -23,6 +23,7 @@ namespace AngularJSAuthentication
 
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            GlobalConfiguration.Configuration.EnsureInitialized();
         }
     }
 }
