@@ -383,6 +383,7 @@
     <Content Include="controllers\loginController.js" />
     <Content Include="controllers\profileController.js" />
     <Content Include="controllers\refreshController.js" />
+    <Content Include="register.html" />
     <Content Include="scripts\angular-local-storage.min.js" />
     <Content Include="scripts\authComplete.js" />
     <Content Include="scripts\loading-bar.min.js" />
