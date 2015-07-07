@@ -125,7 +125,7 @@ var app = angular.module('TourneyTime', ['ionic', 'LocalStorageModule']);
 
         $scope.orders = [];
 
-        ordersService.getOrders().then(function (results) {
+        ordersService.getOrders(authService.authentication.userName).then(function (results) {
 
             $scope.orders = results.data;
 
