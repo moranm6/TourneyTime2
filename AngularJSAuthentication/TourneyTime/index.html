@@ -41,8 +41,8 @@
             <ion-tab icon="ion-home" ui-sref="home">
                 <ion-nav-view name="home"></ion-nav-view>
             </ion-tab>
-            <ion-tab icon="ion-help" ui-sref="help">
-                <ion-nav-view name="help"></ion-nav-view>
+            <ion-tab icon="ion-help" ui-sref="login">
+                <ion-nav-view name="login"></ion-nav-view>
             </ion-tab>
             <ion-tab icon="ion-person" ui-sref="profile">
                 <ion-nav-view name="profile"></ion-nav-view>
@@ -62,7 +62,7 @@
                     <p>Authentication: {{authentication.isAuth}}</p>  
                     <p>
                         <a ng-if="authentication.isAuth" class="button icon icon-right ion-chevron-right" href="#/profile">Profile</a>
-                        <a ng-if="!authentication.isAuth" class="button icon icon-right ion-chevron-right" href="#/help">Login</a>
+                        <a ng-if="!authentication.isAuth" class="button icon icon-right ion-chevron-right" href="#/login">Login</a>
                         <a ng-if="!authentication.isAuth" class="button icon icon-right ion-chevron-right" href="#/register">Register</a>
                     </p>
 
@@ -71,10 +71,10 @@
             </ion-view>
         </script>
 
-    <script type="text/ng-template" id="help.html">
-            <ion-view title="help">
+    <script type="text/ng-template" id="login.html">
+            <ion-view title="login">
                 <ion-content padding="true">
-                    <h2>Help Page</h2>
+                    <h2>Login Page</h2>
                     <h2 class="form-login-heading">Login</h2>
                     <input type="text" class="form-control" placeholder="Username" data-ng-model="loginData.userName" required autofocus>
                     <input type="password" class="form-control" placeholder="Password" data-ng-model="loginData.password" required>

@@ -14,11 +14,11 @@ angular.module('TourneyTime', ['ionic', 'LocalStorageModule'])
         }
     })
 
-    $stateProvider.state('help', {
-        url: '/help',
+    $stateProvider.state('login', {
+        url: '/login',
         views: {
-            help: {
-                templateUrl: 'help.html',
+            login: {
+                templateUrl: 'login.html',
                 controller: 'loginController'
             }
         }
