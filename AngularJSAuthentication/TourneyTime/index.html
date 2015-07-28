@@ -140,15 +140,34 @@
     <script type="text/ng-template" id="profile.html">
             <ion-view title="Profile">
                 <ion-content padding="true">
-                    <h2>Profile</h2>
-                    <h3 ng-if="ordersError != undefined">{{ordersError}}</h3>
-                    <h3 ng-if="ordersError == undefined">You are logged in!</h3>
-                    Welcome {{loggedInUser.firstName}} {{loggedInUser.lastName}} !
-                    
-                <button class="btn btn-md btn-info btn-block" type="submit" data-ng-click="logout()">Logout</button>
-                <div data-ng-hide="message == ''" class="alert alert-danger">
-                    {{message}}
-                </div>
+                <h2>Profile</h2>
+                    <div ng-if="!authentication.isAuth">
+                        Login to view your profile
+                        <a ng-if="!authentication.isAuth" class="button icon icon-right ion-chevron-right" href="#/login">Login</a>
+                        <a ng-if="!authentication.isAuth" class="button icon icon-right ion-chevron-right" href="#/register">Register</a>
+                    </div>
+                    <div ng-if="authentication.isAuth">
+                        
+                        
+                        <div class="item item-avatar">
+                            <img src="img/miketronLarge.png">
+                            <h2>{{loggedInUser.firstName}} {{loggedInUser.lastName}}</h2>
+                            <p>{{loggedInUser.email}}</p>
+                        </div>
+                        <h2>Games</h2>
+                        {{loggedInUser.Games}}
+
+                        <button class="button button-stable" type="submit" data-ng-click="addGameToPlayer(loggedInUser)">
+                            Add A Game
+                        </button>
+
+                        <button class="button button-stable" type="submit" data-ng-click="logout()">
+                            Logout
+                        </button>
+                        <div data-ng-hide="message == ''" class="alert alert-danger">
+                            {{message}}
+                        </div>
+                    </div>
                 </ion-content>
             </ion-view>
         </script>
@@ -168,6 +187,7 @@
     <!--<script src="scripts/loading-bar.min.js"></script>-->
 
         <!-- Load services -->
+        <script src="services/gameService.js?v=2"></script>
         <script src="services/authInterceptorService.js?v=2"></script>
         <script src="services/authService.js?v=2"></script>
         <script src="services/ordersService.js?v=2"></script>

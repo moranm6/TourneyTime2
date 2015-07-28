@@ -20,6 +20,14 @@ namespace AngularJSAuthentication.Controllers
             _repo = new AuthRepository();
         }
 
+        // POST api/Account/AddGameToPlayer
+        [AllowAnonymous]
+        [Route("AddGameToPlayer")]
+        public void Add(Game game, ApplicationUser user)
+        {
+            user.Games.Add(game);
+        }
+
         // POST api/Account/Register
         [AllowAnonymous]
         [Route("Register")]

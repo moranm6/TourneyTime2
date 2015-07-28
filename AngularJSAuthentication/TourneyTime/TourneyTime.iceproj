@@ -389,6 +389,7 @@
     <Content Include="scripts\loading-bar.min.js" />
     <Content Include="services\authInterceptorService.js" />
     <Content Include="services\authService.js" />
+    <Content Include="services\gameService.js" />
     <Content Include="services\ordersService.js" />
     <Content Include="services\playerService.js" />
     <Content Include="services\TokensManagerService.js" />
