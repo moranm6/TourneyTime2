@@ -23,7 +23,7 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World!</title>
+        <title>Tourney Time</title>
 
         <link href="bower_components/ionic/lib/css/ionic.css" rel="stylesheet">
         <link href="css/app.css" rel="stylesheet">
@@ -58,12 +58,12 @@
             <ion-view title="Home">
                 <ion-content padding="true">
                     <h2>Tourney Time</h2>
+
+                    <p>Authentication: {{authentication.isAuth}}</p>  
                     <p>
-                        <a class="button icon icon-right ion-chevron-right" href="#/register">Register</a>
-                    </p>
-                    
-                    <p>
-                        <a class="button icon icon-right ion-chevron-right" href="#/profile">Profile</a>
+                        <a ng-if="authentication.isAuth" class="button icon icon-right ion-chevron-right" href="#/profile">Profile</a>
+                        <a ng-if="!authentication.isAuth" class="button icon icon-right ion-chevron-right" href="#/help">Login</a>
+                        <a ng-if="!authentication.isAuth" class="button icon icon-right ion-chevron-right" href="#/register">Register</a>
                     </p>
 
                     <p>Here's the main route for the app.</p>

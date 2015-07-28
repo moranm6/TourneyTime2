@@ -5,6 +5,7 @@ angular.module('TourneyTime').controller('homeController', ['$scope', 'playerSer
         $scope.players = data;
     });
 
+    $scope.authentication = authService.authentication;
 
     $scope.registerUser = playerService.registerUser;
 

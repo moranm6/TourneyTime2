@@ -8,7 +8,8 @@ angular.module('TourneyTime', ['ionic', 'LocalStorageModule'])
         url: '/home',
         views: {
             home: {
-                templateUrl: 'home.html'
+                templateUrl: 'home.html',
+                controller: 'homeController'
             }
         }
     })
