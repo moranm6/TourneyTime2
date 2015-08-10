@@ -68,6 +68,7 @@ namespace AngularJSAuthentication
             return user;
         }
 
+
         public void Dispose()
         {
             _ctx.Dispose();

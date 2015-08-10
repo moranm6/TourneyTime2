@@ -14,18 +14,43 @@ namespace AngularJSAuthentication.Controllers
     public class AccountController : ApiController
     {
         private AuthRepository _repo = null;
+        private AuthContext db;
 
         public AccountController()
         {
             _repo = new AuthRepository();
+            db = new AuthContext();
         }
+
+        // POST api/Account/AddGame
+        [AllowAnonymous]
+        [Route("AddGame")]
+        public void AddGame(Game game)
+        {
+            //var user = db.Players.Find(playerId);
+            //db.Games.Add(game);
+            //db.SaveChanges();
+
+            //var userToAdd = db.Players.Find("11dd5c6b-629c-4b79-9aae-de6eefad226c");
+            var userToAdd = (from users in db.Players
+                where users.UserName.Equals("jbauer777")
+                select users).FirstOrDefault();
+            var gameCheck = db.Games.Find(1);
+            //gameCheck.ApplicationUsers.Add(userToAdd);
+            userToAdd.Games.Add(gameCheck);
+            db.SaveChanges();
+        }
+
 
         // POST api/Account/AddGameToPlayer
         [AllowAnonymous]
         [Route("AddGameToPlayer")]
-        public void Add(Game game, ApplicationUser user)
+        public void AddGameToPlayer(Game game, string playerId)
         {
-            user.Games.Add(game);
+            var userToAdd = db.Players.Find(playerId);
+            var gameCheck = db.Games.Find(game.Id);
+            gameCheck.ApplicationUsers.Add(userToAdd);
+            db.SaveChanges();
         }
 
         // POST api/Account/Register

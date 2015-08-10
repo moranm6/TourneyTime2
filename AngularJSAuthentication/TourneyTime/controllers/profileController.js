@@ -21,10 +21,16 @@ angular
             id: 7
         }
 
-    $scope.addGameToPlayer = function(loggedInUser) {
-        gameService.addGameToPlayer(testGame, loggedInUser);
-        $scope.message = "Added " + testGame.title + " to " + loggedInUser.firstName;
-        console.log("Added " + testGame.title + " to " + loggedInUser.firstName);
+    $scope.addGameToPlayer = function() {
+        gameService.addGameToPlayer(testGame, authService.authentication);
+        $scope.message = "Added " + testGame.title + " to " + authService.authentication.userName;
+        console.log("Added " + testGame.title + " to " + authService.authentication.userName);
+        }
+
+    $scope.addGame = function () {
+        gameService.addGame(testGame);
+        $scope.message = "Added " + testGame.title + " to ";// + loggedInUser.firstName;
+        console.log("Added " + testGame.title + " to ");// + loggedInUser.firstName);
     }
 
     $scope.logout = function () {
